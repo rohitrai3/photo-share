@@ -5,7 +5,7 @@ function Header() {
     <div>
       <div className="flex justify-between max-w-6xl">
         {/* Left */}
-        <div className="relative hidden lg:inline-grid h-24 w-24">
+        <div className="relative hidden lg:inline-grid h-24 w-24 cursor-pointer">
           <Image
             src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/photo-share-text.png"
             fill
@@ -13,7 +13,7 @@ function Header() {
           />
         </div>
 
-        <div>
+        <div className="relative w-10 h-10 lg:hidden flex-shrink-0 cursor-pointer">
           <Image
             src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/logo.png"
             fill
