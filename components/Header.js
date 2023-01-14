@@ -52,6 +52,11 @@ function Header() {
           <PlusCircleIcon className="navBtn" />
           <UserGroupIcon className="navBtn" />
           <HeartIcon className="navBtn" />
+
+          <img
+            src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/logo.png"
+            alt="Profile Picture"
+          />
         </div>
       </div>
     </div>
