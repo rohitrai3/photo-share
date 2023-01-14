@@ -1,5 +1,13 @@
 import Image from 'next/image';
-import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
+import {
+  MagnifyingGlassIcon,
+  Bars3Icon,
+  PaperAirplaneIcon,
+  PlusCircleIcon,
+  UserGroupIcon,
+  HeartIcon
+} from '@heroicons/react/24/outline';
+import { HomeIcon } from '@heroicons/react/24/solid';
 
 function Header() {
   return (
@@ -37,6 +45,14 @@ function Header() {
         </div>
 
         {/* RIght */}
+        <div className="h-10 w-10">
+          <HomeIcon />
+          <Bars3Icon />
+          <PaperAirplaneIcon />
+          <PlusCircleIcon />
+          <UserGroupIcon />
+          <HeartIcon />
+        </div>
       </div>
     </div>
   );
