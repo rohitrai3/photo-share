@@ -20,8 +20,11 @@ function Header() {
             style={{ objectFit: "contain" }}
           />
         </div>
-        {/* Middle */}
 
+        {/* Middle */}
+        <div>
+          <input type="text" placeholder="Search" />
+        </div>
         {/* RIght */}
       </div>
     </div>
