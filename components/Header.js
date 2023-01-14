@@ -12,7 +12,7 @@ import { HomeIcon } from '@heroicons/react/24/solid';
 function Header() {
   return (
     <div>
-      <div className="flex justify-between max-w-6xl">
+      <div className="flex justify-between max-w-6xl mx-5 lg:mx-auto">
         {/* Logo */}
         <div className="relative hidden lg:inline-grid w-24 cursor-pointer">
           <Image
@@ -45,13 +45,13 @@ function Header() {
         </div>
 
         {/* RIght */}
-        <div className="h-10 w-10">
-          <HomeIcon />
-          <Bars3Icon />
-          <PaperAirplaneIcon />
-          <PlusCircleIcon />
-          <UserGroupIcon />
-          <HeartIcon />
+        <div className="flex items-center justify-end space-x-4">
+          <HomeIcon className="navBtn" />
+          <Bars3Icon className="h-6 md:hidden cursor-pointer" />
+          <PaperAirplaneIcon className="navBtn" />
+          <PlusCircleIcon className="navBtn" />
+          <UserGroupIcon className="navBtn" />
+          <HeartIcon className="navBtn" />
         </div>
       </div>
     </div>
