@@ -56,6 +56,7 @@ function Header() {
           <img
             src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/logo.png"
             alt="Profile Picture"
+            className="h-10 rounded-full cursor-pointer"
           />
         </div>
       </div>
