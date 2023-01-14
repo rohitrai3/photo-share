@@ -4,7 +4,7 @@ function Header() {
   return (
     <div>
       <div className="flex justify-between max-w-6xl">
-        {/* Left */}
+        {/* Logo */}
         <div className="relative hidden lg:inline-grid h-24 w-24 cursor-pointer">
           <Image
             src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/photo-share-text.png"
