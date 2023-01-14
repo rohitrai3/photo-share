@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 
 function Header() {
   return (
@@ -23,6 +24,9 @@ function Header() {
 
         {/* Middle */}
         <div>
+          <div>
+            <MagnifyingGlassIcon />
+          </div>
           <input type="text" placeholder="Search" />
         </div>
         {/* RIght */}
