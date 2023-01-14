@@ -48,7 +48,7 @@ function Header() {
         <div className="flex items-center justify-end space-x-4">
           <HomeIcon className="navBtn" />
           <Bars3Icon className="h-6 md:hidden cursor-pointer" />
-          <PaperAirplaneIcon className="navBtn" />
+          <PaperAirplaneIcon className="navBtn -rotate-90" />
           <PlusCircleIcon className="navBtn" />
           <UserGroupIcon className="navBtn" />
           <HeartIcon className="navBtn" />
