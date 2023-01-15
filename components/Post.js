@@ -1,3 +1,5 @@
+import { EllipsisVerticalIcon } from '@heroicons/react/24/solid';
+
 function Post({ username, userImg }) {
   return (
     <div className="bg-white my-7 border rounded-sm">
@@ -9,6 +11,7 @@ function Post({ username, userImg }) {
           alt="User Profile"
         />
         <p className="flex-1 font-bold">{username}</p>
+        <EllipsisVerticalIcon className="h-5" />
       </div>
 
       {/* Image */}
