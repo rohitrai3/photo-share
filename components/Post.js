@@ -6,7 +6,7 @@ import {
   BookmarkIcon
 } from '@heroicons/react/24/outline';
 
-function Post({ username, userImg, img }) {
+function Post({ username, userImg, img, caption }) {
   return (
     <div className="bg-white my-7 border rounded-sm">
       {/* Header */}
@@ -39,6 +39,10 @@ function Post({ username, userImg, img }) {
       </div>
 
       {/* Caption */}
+      <p className="p-5 truncate">
+        <span className="font-bold mr-1">{username} </span>
+        {caption}
+      </p>
 
       {/* Comments */}
 
