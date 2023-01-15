@@ -1,6 +1,6 @@
 import { EllipsisVerticalIcon } from '@heroicons/react/24/solid';
 
-function Post({ username, userImg }) {
+function Post({ username, userImg, img }) {
   return (
     <div className="bg-white my-7 border rounded-sm">
       {/* Header */}
@@ -15,6 +15,11 @@ function Post({ username, userImg }) {
       </div>
 
       {/* Image */}
+      <img
+        src={img}
+        className="object-cover w-full"
+        alt="Post Image"
+      />
 
       {/* Buttons */}
 
