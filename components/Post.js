@@ -1,4 +1,9 @@
-import { EllipsisVerticalIcon } from '@heroicons/react/24/solid';
+import {
+  EllipsisVerticalIcon,
+  HeartIcon,
+  ChatBubbleOvalLeftEllipsisIcon,
+  PaperAirplaneIcon
+} from '@heroicons/react/24/outline';
 
 function Post({ username, userImg, img }) {
   return (
@@ -22,6 +27,11 @@ function Post({ username, userImg, img }) {
       />
 
       {/* Buttons */}
+      <div>
+        <HeartIcon />
+        <ChatBubbleOvalLeftEllipsisIcon />
+        <PaperAirplaneIcon />
+      </div>
 
       {/* Caption */}
 
