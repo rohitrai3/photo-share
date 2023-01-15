@@ -28,9 +28,9 @@ function Post({ username, userImg, img }) {
 
       {/* Buttons */}
       <div>
-        <HeartIcon />
-        <ChatBubbleOvalLeftEllipsisIcon />
-        <PaperAirplaneIcon />
+        <HeartIcon className="btn" />
+        <ChatBubbleOvalLeftEllipsisIcon className="btn" />
+        <PaperAirplaneIcon className="btn -rotate-90" />
       </div>
 
       {/* Caption */}
