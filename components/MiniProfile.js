@@ -6,6 +6,10 @@ function MiniProfile() {
         src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/logo.png"
         alt="User Profile"
       />
+
+      <div>
+        <h3>username</h3>
+      </div>
     </div>
   );
 };
