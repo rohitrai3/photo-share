@@ -53,6 +53,7 @@ function Post({ username, userImg, img, caption }) {
         <input
           type="text"
           placeholder="Add a comment..."
+          className="border-none flex-1 focus:ring-0 outline-none"
         />
         <button>Post</button>
       </form>
