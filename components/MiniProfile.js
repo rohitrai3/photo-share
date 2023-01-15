@@ -7,12 +7,12 @@ function MiniProfile() {
         alt="User Profile"
       />
 
-      <div>
-        <h3>username</h3>
-        <h3>Welcome to PhotoShare</h3>
+      <div className="flex-1 mx-4">
+        <h3 className="font-bold">username</h3>
+        <h3 className="text-sm text-gray-400">Welcome to PhotoShare</h3>
       </div>
 
-      <button>Sign Out</button>
+      <button className="text-blue-400 text-sm font-semibold">Sign Out</button>
     </div>
   );
 };
