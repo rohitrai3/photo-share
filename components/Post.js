@@ -4,7 +4,7 @@ function Post({ username, userImg }) {
   return (
     <div className="bg-white my-7 border rounded-sm">
       {/* Header */}
-      <div>
+      <div className="flex items-center p-5">
         <img
           src={userImg}
           className="rounded-full h-12 w-12 object-contain border p-1 mr-3"
