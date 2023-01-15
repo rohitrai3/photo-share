@@ -3,7 +3,8 @@ import {
   HeartIcon,
   ChatBubbleOvalLeftEllipsisIcon,
   PaperAirplaneIcon,
-  BookmarkIcon
+  BookmarkIcon,
+  FaceSmileIcon
 } from '@heroicons/react/24/outline';
 
 function Post({ username, userImg, img, caption }) {
@@ -48,6 +49,7 @@ function Post({ username, userImg, img, caption }) {
 
       {/* Input Box */}
       <form>
+        <FaceSmileIcon className="h-7" />
         <input
           type="text"
           placeholder="Add a comment..."
