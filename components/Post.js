@@ -48,7 +48,7 @@ function Post({ username, userImg, img, caption }) {
       {/* Comments */}
 
       {/* Input Box */}
-      <form>
+      <form className="flex items-center p-4">
         <FaceSmileIcon className="h-7" />
         <input
           type="text"
