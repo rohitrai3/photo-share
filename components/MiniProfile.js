@@ -11,6 +11,8 @@ function MiniProfile() {
         <h3>username</h3>
         <h3>Welcome to PhotoShare</h3>
       </div>
+
+      <button>Sign Out</button>
     </div>
   );
 };
