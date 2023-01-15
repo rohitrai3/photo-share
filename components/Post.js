@@ -28,7 +28,7 @@ function Post({ username, userImg, img }) {
       />
 
       {/* Buttons */}
-      <div>
+      <div className="flex justify-between px-4 pt-4">
         <div className="flex space-x-4">
           <HeartIcon className="btn" />
           <ChatBubbleOvalLeftEllipsisIcon className="btn" />
