@@ -47,6 +47,13 @@ function Post({ username, userImg, img, caption }) {
       {/* Comments */}
 
       {/* Input Box */}
+      <form>
+        <input
+          type="text"
+          placeholder="Add a comment..."
+        />
+        <button>Post</button>
+      </form>
 
     </div>
   );
