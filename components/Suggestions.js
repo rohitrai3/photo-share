@@ -17,7 +17,7 @@ function Suggestions() {
 
   return (
     <div>
-      <h1>I am suggestions.</h1>
+      <h3 className="text-sm font-bold text-gray-400">Suggestions for you</h3>
     </div>
   );
 };
