@@ -34,6 +34,8 @@ function Suggestions() {
             <h2 className="font-semibold text-sm">{profile.username}</h2>
             <h3 className="text-xs text-gray-400">Works at {profile.companyName}</h3>
           </div>
+
+          <button>Follow</button>
         </div>
       ))};
     </div>
