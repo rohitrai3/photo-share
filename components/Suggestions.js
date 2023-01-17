@@ -31,7 +31,7 @@ function Suggestions() {
           />
 
           <div>
-            <h2>{profile.username}</h2>
+            <h2 className="font-semibold text-sm">{profile.username}</h2>
             <h3>Works at {profile.companyName}</h3>
           </div>
           </div>
