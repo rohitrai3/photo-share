@@ -21,6 +21,20 @@ function Suggestions() {
         <h3 className="text-sm font-bold text-gray-400">Suggestions for you</h3>
         <button className="text-gray-600 font-semibold">See All</button>
       </div>
+
+      {suggestions.map((profile) => (
+        <div>
+          <img
+            src={profile.avatar}
+            alt="User Profile"
+          />
+
+          <div>
+            <h2>{profile.username}</h2>
+            <h3>Works at {profile.companyName}</h3>
+          </div>
+          </div>
+      ))};
     </div>
   );
 };
