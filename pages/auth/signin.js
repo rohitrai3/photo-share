@@ -12,6 +12,9 @@ function SignIn({ providers }) {
           src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/photo-share-text.png"
           alt="PhotoShare"
         />
+        <p className="font-xs italic">
+          Upload your photos to share them with Everyone
+        </p>
         {Object.values(providers).map((provider) => (
           <div key={provider.name}>
             <button onClick={() => signIn(provider.id)}>
