@@ -7,6 +7,11 @@ function SignIn({ providers }) {
       <Header />
 
       <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-14 text-center">
+        <img
+          className="w-80"
+          src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/photo-share-text.png"
+          alt="PhotoShare"
+        />
         {Object.values(providers).map((provider) => (
           <div key={provider.name}>
             <button onClick={() => signIn(provider.id)}>
