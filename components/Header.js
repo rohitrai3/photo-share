@@ -9,6 +9,7 @@ import {
 } from '@heroicons/react/24/outline';
 import { HomeIcon } from '@heroicons/react/24/solid';
 import { useSession, signIn, signOut } from 'next-auth/react';
+import { router } from 'next/router';
 
 function Header() {
   const { data: session } = useSession();
@@ -19,6 +20,7 @@ function Header() {
         {/* Logo */}
         <div className="relative hidden lg:inline-grid w-24 cursor-pointer">
           <Image
+            onClick={() => router.push("/")}
             src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/photo-share-text.png"
             fill
             style={{ objectFit: "contain" }}
@@ -28,6 +30,7 @@ function Header() {
 
         <div className="relative w-10 lg:hidden flex-shrink-0 cursor-pointer">
           <Image
+            onClick={() => router.push("/")}
             src="https://raw.githubusercontent.com/rohitrai3/resources/main/images/logo.png"
             fill
             style={{ objectFit: "contain" }}
@@ -51,7 +54,10 @@ function Header() {
 
         {/* Navigation */}
         <div className="flex items-center justify-end space-x-4">
-          <HomeIcon className="navBtn" />
+          <HomeIcon
+            onClick={() => router.push("/")}
+            className="navBtn"
+          />
 
           {session ? (
             <>
