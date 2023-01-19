@@ -5,13 +5,16 @@ function SignIn({ providers }) {
   return (
     <>
       <Header />
-      {Object.values(providers).map((provider) => (
-        <div key={provider.name}>
-          <button onClick={() => signIn(provider.id)}>
-            Sign in with {provider.name}
-          </button>
-        </div>
-      ))}
+
+      <div className="flex flex-col items-center justify-center min-h-screen py-2 -mt-56 px-14 text-center">
+        {Object.values(providers).map((provider) => (
+          <div key={provider.name}>
+            <button onClick={() => signIn(provider.id)}>
+              Sign in with {provider.name}
+            </button>
+          </div>
+        ))}
+      </div>
     </>
   )
 }
