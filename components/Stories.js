@@ -11,8 +11,7 @@ function Stories() {
       userName: faker.internet.userName(),
       avatar: faker.internet.avatar(),
     }));
-    console.log(faker.internet.userName());
-    console.log(suggestions);
+    
     setSuggestions(suggestions);
   }, []);
 
