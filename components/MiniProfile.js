@@ -12,7 +12,7 @@ function MiniProfile() {
       />
 
       <div className="flex-1 mx-4">
-        <h3 className="font-bold">username</h3>
+        <h3 className="font-bold">{session?.user?.username}</h3>
         <h3 className="text-sm text-gray-400">Welcome to PhotoShare</h3>
       </div>
 
