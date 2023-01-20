@@ -7,6 +7,7 @@ import { CameraIcon } from '@heroicons/react/24/outline';
 function Modal() {
   const [open, setOpen] = useRecoilState(modalState);
   const filePickerRef = useRef(null);
+  const captionRef = useRef(null);
   const [selectedFile, setSelectedFile] = useState(null);
 
   const addImageToPost = (e) => {
@@ -100,6 +101,7 @@ function Modal() {
                       <input
                         className="border-none focus:ring-0 w-full text-center"
                         type="text"
+                        ref={captionRef}
                         placeholder="Please enter a Caption..."
                       />
                     </div>
