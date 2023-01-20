@@ -1,33 +1,32 @@
 import Post from './Post';
-
-const DUMMY_POSTS = [
-  {
-    id: 'id1',
-    username: 'username1',
-    userImg: 'https://raw.githubusercontent.com/rohitrai3/resources/main/images/logo.png',
-    img: 'https://raw.githubusercontent.com/rohitrai3/resources/main/images/photo-share-text.png',
-    caption: 'this is first caption'
-  },
-  {
-    id: 'id2',
-    username: 'username2',
-    userImg: 'https://raw.githubusercontent.com/rohitrai3/resources/main/images/logo.png',
-    img: 'https://raw.githubusercontent.com/rohitrai3/resources/main/images/photo-share-text.png',
-    caption: 'this is second caption'
-  },
-];
+import { useState, useEffect } from 'react';
+import { collection, onSnapshot, orderBy, query } from '@firebase/firestore';
+import { db } from '../firebase';
 
 function Posts() {
+  const [posts, setPosts] = useState([]);
+
+  useEffect(
+    () =>
+      onSnapshot(
+        query(collection(db, 'posts'), orderBy("timestamp", "desc")),
+        (snapshot) => {
+          setPosts(snapshot.docs);
+        }
+      ),
+    [db]
+  );
+
   return (
     <div>
-      {DUMMY_POSTS.map((post) => (
+      {posts.map((post) => (
         <Post
           key={post.id}
           id={post.id}
-          username={post.username}
-          userImg={post.userImg}
-          img={post.img}
-          caption={post.caption}
+          username={post.data().username}
+          userImg={post.data().profileImg}
+          img={post.data().image}
+          caption={post.data().caption}
         />
       ))}
     </div>
