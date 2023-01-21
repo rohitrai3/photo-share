@@ -6,15 +6,27 @@ import {
   BookmarkIcon,
   FaceSmileIcon
 } from '@heroicons/react/24/outline';
-import { addDoc, collection, serverTimestamp } from '@firebase/firestore';
+import { addDoc, collection, onSnapshot, orderBy, serverTimestamp, query } from '@firebase/firestore';
 import { db } from '../firebase';
 import { useSession } from 'next-auth/react';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function Post({ id, username, userImg, img, caption }) {
   const { data: session } = useSession();
   const [comment, setComment] = useState('');
   const [comments, setComments] = useState([]);
+
+  useEffect(
+    () =>
+      onSnapshot(
+        query(
+          collection(db, 'posts', id, 'comments'),
+          orderBy('timestamp', 'desc')
+        ),
+        (snapshot) => setComments(snapshot.docs)
+      ),
+    [db]
+  );
 
   const sendComment = async (e) => {
     e.preventDefault();
